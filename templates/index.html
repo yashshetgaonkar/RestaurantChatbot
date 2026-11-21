@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast-Food Service - Chatbot Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">🍔</div>
+            <div>
+                <h2>Fast-Food Service</h2>
+                <p>Chatbot Assistant</p>
+            </div>
+        </div>
+
+        <button class="new-chat" onclick="resetChat()">＋ New conversation</button>
+
+        <div class="sidebar-section">
+            <p class="section-title">QUICK MENU</p>
+            <button class="side-option" onclick="sendQuickMessage('Show me the menu')">🍽️ Explore Menu</button>
+            <button class="side-option" onclick="sendQuickMessage('Show me burgers')">🍔 Burgers</button>
+            <button class="side-option" onclick="sendQuickMessage('Show me pizzas')">🍕 Pizzas</button>
+            <button class="side-option" onclick="sendQuickMessage('What do you recommend?')">⭐ Recommendations</button>
+            <button class="side-option" onclick="sendQuickMessage('Tell me the prices')">💰 Price List</button>
+        </div>
+
+        <div class="sidebar-footer">
+            <div class="avatar">🤖</div>
+            <div>
+                <strong>Fast-Food Service AI</strong>
+                <p>Powered by Machine Learning</p>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="topbar">
+            <div>
+                <h3>Chatbot Assistant</h3>
+                <span class="online"><span class="dot"></span> Online and ready to help</span>
+            </div>
+            <div class="top-tag">AI Powered ✨</div>
+        </header>
+
+        <section class="chat-area" id="chatArea">
+            <div class="welcome" id="welcome">
+                <div class="welcome-icon">🍕</div>
+                <h1>Welcome to Fast-Food Service!</h1>
+                <p>Your personal food assistant. Craving something delicious? Let's find it.</p>
+
+                <div class="suggestions">
+                    <button onclick="sendQuickMessage('Show me the menu')">🍽️ Explore menu</button>
+                    <button onclick="sendQuickMessage('Recommend me some food')">⭐ Recommend food</button>
+                    <button onclick="sendQuickMessage('How much is a burger?')">💰 Check prices</button>
+                    <button onclick="sendQuickMessage('I want to order food')">🛒 Place an order</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="input-section">
+            <div class="input-box">
+                <input type="text" id="messageInput" placeholder="Ask me about food, menu, prices..." autocomplete="off">
+                <button id="sendButton" onclick="sendMessage()">➤</button>
+            </div>
+            <p class="input-note">Fast-Food Service can make mistakes. Please confirm your order details.</p>
+        </div>
+    </main>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

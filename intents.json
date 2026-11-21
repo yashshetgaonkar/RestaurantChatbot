@@ -1,0 +1,152 @@
+
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hello",
+        "Hi",
+        "Hey",
+        "Good morning",
+        "Good evening",
+        "Is anyone there",
+        "Hi there",
+        "Hey there"
+      ],
+      "responses": [
+        "Hello! Welcome to our restaurant. How can I help you?",
+        "Hi there! Hungry for something delicious?",
+        "Welcome! I can help you explore our menu and place an order."
+      ]
+    },
+    {
+      "tag": "menu",
+      "patterns": [
+        "Show me the menu",
+        "What food do you have",
+        "What is available",
+        "Display your menu",
+        "I want to see the menu",
+        "What can I eat",
+        "List food items"
+      ],
+      "responses": [
+        "Our menu includes burgers, pizza, pasta, sandwiches, fries and beverages. Which would you like to explore?"
+      ]
+    },
+    {
+      "tag": "pizza",
+      "patterns": [
+        "I want pizza",
+        "Show me pizzas",
+        "Do you have pizza",
+        "Pizza options",
+        "I would like to eat pizza",
+        "Which pizzas do you have"
+      ],
+      "responses": [
+        "We have Margherita, Farmhouse and Pepperoni pizzas. Which one would you like?"
+      ]
+    },
+    {
+      "tag": "burger",
+      "patterns": [
+        "I want a burger",
+        "Show me burgers",
+        "Do you have burgers",
+        "Burger options",
+        "Cheese burger",
+        "Which burgers are available"
+      ],
+      "responses": [
+        "We have Classic Burger, Cheese Burger and Double Burger. Would you like to order one?"
+      ]
+    },
+    {
+      "tag": "price",
+      "patterns": [
+        "What are your prices",
+        "How much does food cost",
+        "Price list",
+        "How much is a burger",
+        "Tell me the price",
+        "Are the prices affordable"
+      ],
+      "responses": [
+        "Our prices are affordable! Burgers start at Rs. 129, pizzas at Rs. 199 and fries at Rs. 89. Ask about any item for its exact price."
+      ]
+    },
+    {
+      "tag": "order",
+      "patterns": [
+        "I want to order food",
+        "Place an order",
+        "Can I order something",
+        "I would like to buy food",
+        "Take my order",
+        "Order food for me"
+      ],
+      "responses": [
+        "Sure! Tell me what you'd like to order. You can choose from burgers, pizzas, pasta, sandwiches and beverages."
+      ]
+    },
+    {
+      "tag": "recommendation",
+      "patterns": [
+        "What do you recommend",
+        "Suggest something good",
+        "What is popular",
+        "What should I eat",
+        "Recommend me some food",
+        "Best food here"
+      ],
+      "responses": [
+        "Our customer favorites are Cheese Burger, Farmhouse Pizza and Crispy Fries! Would you like to try one?"
+      ]
+    },
+    {
+      "tag": "hours",
+      "patterns": [
+        "What are your opening hours",
+        "When do you open",
+        "When do you close",
+        "Are you open",
+        "Restaurant timings",
+        "What time are you open"
+      ],
+      "responses": [
+        "We are open daily from 10:00 AM to 10:00 PM."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thank you",
+        "Thanks",
+        "Thanks a lot",
+        "That was helpful",
+        "Appreciate it",
+        "Thank you so much"
+      ],
+      "responses": [
+        "You're welcome! Enjoy your meal!",
+        "Happy to help! Let me know if you need anything else."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "I am leaving",
+        "Have a good day",
+        "See you"
+      ],
+      "responses": [
+        "Goodbye! Thank you for visiting us. Have a delicious day!",
+        "See you soon! We hope you enjoyed our service."
+      ]
+    }
+  ]
+}
